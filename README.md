@@ -13,21 +13,14 @@ interface visualmente atrativa, acessível e adequada ao público do Ensino Méd
 
 ESTRUTURA DE PASTAS E RESPONSABILIDADE DOS ARQUIVOS
 
-index.html: Estrutura da página e seus elementos - sujeito a mudanças pela equipe do front
-css/style.css: Cores, fontes, espaçamentos, menus e aparência geral. - sujeito a mudanças pela equipe do front
-css/responsivo.css: Ajustes para celulares, tablets e computadores. - sujeito a mudanças pela equipe do front
-js/main.js: Inicialização do site e coordenação das funcionalidades.
-js/corpo-humano.js: Cliques, seleção e destaque dos órgãos.
-js/conteudo.js: Leitura dos dados e exibição das informações.
-dados/orgaos.json: Informações dos órgãos.
-dados/sistemas.json: Informações e organização dos sistemas corporais.
-assets/imagens/: Ilustrações do corpo humano e imagens complementares. - sujeito a mudanças pela equipe do front
-assets/icones/: Ícones utilizados na interface. - sujeito a mudanças pela equipe do front
+js/dados: informações do conteúdo do site, todos os dados
 README.md: Explicação do projeto, como executá-lo e como a equipe está organizada.
 
 Equipe Backend:
 -Emerson
 -Clara
+    responsabilidade: js/dados
+    status: em andamento...
 
 Equipe Frontend:
 -Carlos
