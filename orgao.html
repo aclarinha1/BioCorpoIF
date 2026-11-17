@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Órgão — BioCorpo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/paginas/orgao.css">
+</head>
+<body>
+
+  <!-- Cabeçalho (gerado pelo layout.js da Pessoa 3) -->
+  <header id="cabecalho"></header>
+
+  <main class="pagina-orgao">
+
+    <a href="#" class="voltar-link" id="voltar-link">← Voltar para o sistema</a>
+
+    <!-- Cabeçalho do órgão -->
+    <div class="orgao-header">
+      <div class="orgao-icone" id="orgao-icone"></div>
+      <div>
+        <h1 id="orgao-nome">Carregando...</h1>
+        <p id="orgao-sistema"></p>
+      </div>
+    </div>
+
+    <!-- Abas (sem aba Órgãos) -->
+    <div class="abas" role="tablist">
+      <button class="aba ativa" data-aba="caracteristicas" role="tab">Características</button>
+      <button class="aba" data-aba="funcoes" role="tab">Funções</button>
+      <button class="aba" data-aba="importancia" role="tab">Importância</button>
+    </div>
+
+    <!-- Grid principal -->
+    <div class="orgao-grid">
+
+      <!-- Conteúdo da aba ativa -->
+      <div class="conteudo-aba" id="conteudo-aba"></div>
+
+      <!-- Imagem do órgão -->
+      <div class="orgao-imagem" id="orgao-imagem">
+        <span>Imagem do órgão</span>
+      </div>
+
+      <!-- Resumo lateral -->
+      <aside class="resumo">
+        <h3>Resumo do órgão</h3>
+        <div class="resumo-item">
+          <span class="resumo-icone">◉</span>
+          <p><strong>Órgão:</strong> <span id="resumo-nome"></span></p>
+        </div>
+        <div class="resumo-item">
+          <span class="resumo-icone">♧</span>
+          <p><strong>Sistema:</strong> <span id="resumo-sistema"></span></p>
+        </div>
+        <div class="resumo-item">
+          <span class="resumo-icone">✦</span>
+          <p><strong>Resumo:</strong><br><span id="resumo-texto"></span></p>
+        </div>
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- Rodapé (gerado pelo layout.js da Pessoa 3) -->
+  <footer id="rodape"></footer>
+
+  <script type="module" src="js/paginas/orgao.js"></script>
+
+</body>
+</html>

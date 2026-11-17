@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema — BioCorpo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/paginas/sistema.css">
+</head>
+<body>
+
+  <!-- Cabeçalho (gerado pelo layout.js da Pessoa 3) -->
+  <header id="cabecalho"></header>
+
+  <main class="pagina-sistema">
+
+    <a href="explorar.html" class="voltar-link">← Voltar para os sistemas</a>
+
+    <!-- Cabeçalho do sistema -->
+    <div class="sistema-header">
+      <div class="sistema-icone" id="sistema-icone"></div>
+      <div>
+        <h1 id="sistema-nome">Carregando...</h1>
+        <p id="sistema-descricao"></p>
+      </div>
+    </div>
+
+    <!-- Abas -->
+    <div class="abas" role="tablist">
+      <button class="aba ativa" data-aba="orgaos" role="tab">Órgãos</button>
+      <button class="aba" data-aba="caracteristicas" role="tab">Características</button>
+      <button class="aba" data-aba="funcoes" role="tab">Funções</button>
+      <button class="aba" data-aba="importancia" role="tab">Importância</button>
+    </div>
+
+    <!-- Grid principal -->
+    <div class="sistema-grid">
+
+      <!-- Conteúdo da aba ativa -->
+      <div class="conteudo-aba" id="conteudo-aba"></div>
+
+      <!-- Imagem do sistema -->
+      <div class="sistema-imagem" id="sistema-imagem">
+        <span>Imagem do sistema</span>
+      </div>
+
+      <!-- Resumo lateral -->
+      <aside class="resumo">
+        <h3>Resumo do sistema</h3>
+        <div class="resumo-item">
+          <span class="resumo-icone" id="resumo-icone"></span>
+          <p><strong>Sistema:</strong> <span id="resumo-nome"></span></p>
+        </div>
+        <div class="resumo-item">
+          <span class="resumo-icone">◉</span>
+          <p><strong>Principais órgãos:</strong> <span id="resumo-orgaos"></span></p>
+        </div>
+        <div class="resumo-item">
+          <span class="resumo-icone">♧</span>
+          <p><strong>Função principal:</strong><br><span id="resumo-funcao"></span></p>
+        </div>
+        <div class="resumo-item">
+          <span class="resumo-icone">✦</span>
+          <p><strong>Importância:</strong><br><span id="resumo-importancia"></span></p>
+        </div>
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- Rodapé (gerado pelo layout.js da Pessoa 3) -->
+  <footer id="rodape"></footer>
+
+  <script type="module" src="js/paginas/sistema.js"></script>
+
+</body>
+</html>
