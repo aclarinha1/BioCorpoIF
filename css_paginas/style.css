@@ -1,0 +1,700 @@
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --ink: #17364f;
+    --muted: #6b879d;
+    --blue: #3288d4;
+    --line: #dceaf5;
+    --page: #f4f8fc;
+    --card: #ffffff;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 28px;
+    background: var(--page);
+    color: var(--ink);
+    font-family: Inter, Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+}
+
+/* ÁREA PRINCIPAL */
+
+.explore-section {
+    width: 100%;
+    min-width: 0;
+    margin: auto;
+}
+
+/* CABEÇALHO */
+
+.explore-header {
+    margin: 30px 10px 60px;
+}
+
+.eyebrow {
+    color: var(--blue);
+    font-size: 10px;
+    letter-spacing: 1.8px;
+    font-weight: 800;
+}
+
+.explore-header h1 {
+    margin: 8px 0;
+    font-size: clamp(25px, 3vw, 34px);
+    color: var(--ink);
+}
+
+.explore-header p {
+    max-width: 650px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ORGANIZAÇÃO DOS DOIS CARDS */
+
+.content-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.8fr) minmax(280px, 0.9fr);
+    align-items: start;
+    gap: 24px;
+    width: 100%;
+}
+
+.content-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-card,
+.actions-card {
+    min-width: 0;
+    padding: 24px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(24, 65, 98, .035);
+}
+
+.card-header {
+    margin-bottom: 20px;
+}
+
+.card-header h2 {
+    margin: 0 0 8px;
+    color: var(--ink);
+    font-size: 19px;
+    font-weight: 750;
+}
+
+.card-description {
+    margin: 0;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* CARD DE EXPLORAÇÃO ANATÔMICA */
+
+.anatomy-board {
+    position: relative;
+    display: grid;
+    width: 100%;
+    max-width: 650px;
+    min-width: 0;
+    margin: 0 auto;
+
+    grid-template-columns: minmax(0, 1fr) 180px minmax(0, 1fr);
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+
+    column-gap: 8px;
+    height: 500px;
+    min-height: 0;
+    padding: 8px 0;
+    overflow: hidden;
+
+    background: radial-gradient(ellipse at center, #edf6fc 0%, #ffffff 69%);
+    border-radius: 14px;
+}
+
+/* IMAGEM CENTRAL DO CORPO */
+
+.body-figure {
+    grid-column: 2;
+    grid-row: 1 / 5;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    pointer-events: none;
+}
+
+.body-figure img {
+    display: block;
+    width: auto;
+    height: 480px;
+    max-width: none;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* LINHAS DE CONEXÃO */
+
+.connectors {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    overflow: visible;
+    pointer-events: none;
+}
+
+.connectors path {
+    fill: none;
+    stroke: #8b969e;
+    stroke-width: 1.35;
+    vector-effect: non-scaling-stroke;
+}
+
+.connector-dots {
+    fill: #8b969e;
+}
+
+/* LISTAS DE ÓRGÃOS */
+
+.organ-list {
+    display: contents;
+}
+
+.organ-item {
+    position: relative;
+    z-index: 3;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    width: 100%;
+    max-width: 120px;
+    height: 125px;
+    min-width: 0;
+    padding: 7px 5px;
+    margin-top: 5px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, .1);
+    color: var(--ink);
+    cursor: pointer;
+    transition:
+        background .18s,
+        border-color .18s,
+        transform .18s,
+        box-shadow .18s;
+}
+
+.organ-list-left .organ-item {
+    grid-column: 1;
+    justify-self: center;
+}
+
+.organ-list-right .organ-item {
+    grid-column: 3;
+    justify-self: center;
+}
+
+/* POSICIONAMENTO VERTICAL DOS ÓRGÃOS */
+
+.organ-list-left .organ-item:nth-child(2),
+.organ-list-right .organ-item:nth-child(2) {
+    grid-row: 2;
+}
+
+.organ-list-left .organ-item:nth-child(3),
+.organ-list-right .organ-item:nth-child(3) {
+    grid-row: 3;
+}
+
+.organ-list-left .organ-item:nth-child(4),
+.organ-list-right .organ-item:nth-child(4) {
+    grid-row: 4;
+}
+
+/* INTERAÇÃO DOS ÓRGÃOS */
+
+.organ-item:hover,
+.organ-item:focus-visible,
+.organ-item.is-active {
+    background: #f1f8fe;
+    border-color: #8fc3eb;
+    box-shadow: 0 6px 18px rgba(35, 113, 174, .12);
+    transform: translateY(-2px);
+    outline: none;
+}
+
+/* IMAGENS DOS ÓRGÃOS */
+
+.organ-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 75px;
+    width: 75px;
+    height: 68px;
+    padding: 4px;
+    background: #f5f8fb;
+    border-radius: 9px;
+}
+
+.organ-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.organ-name {
+    font-size: 12px;
+    font-weight: 750;
+    line-height: 1.3;
+    text-align: center;
+}
+
+/* TOOLTIP DOS SISTEMAS */
+
+.system-tooltip {
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 9px);
+    z-index: 8;
+    display: block;
+    width: max-content;
+    max-width: 190px;
+    padding: 8px 11px;
+    border-radius: 8px;
+    background: #102e46;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 650;
+    box-shadow: 0 6px 18px rgba(2, 24, 44, .18);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50%) translateX(-4px);
+    transition:
+        opacity .16s,
+        transform .16s,
+        visibility .16s;
+    pointer-events: none;
+}
+
+.organ-list-right .system-tooltip {
+    left: auto;
+    right: calc(100% + 9px);
+    transform: translateY(-50%) translateX(4px);
+}
+
+.organ-item:hover .system-tooltip,
+.organ-item:focus-visible .system-tooltip,
+.organ-item.is-active .system-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%) translateX(0);
+}
+
+/* CARD DOS BOTÕES */
+
+.actions-card {
+    min-height: 400px;
+}
+
+.actions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* BOTÕES */
+
+.action-button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    min-width: 0;
+    padding: 13px 12px;
+    border: 1px solid var(--line);
+    border-radius: 11px;
+    background: #ffffff;
+    color: var(--ink);
+    text-align: left;
+    cursor: pointer;
+    transition:
+        background .2s,
+        border-color .2s,
+        transform .2s,
+        box-shadow .2s;
+}
+
+.action-button:hover {
+    background: #f1f8fe;
+    border-color: #8fc3eb;
+    box-shadow: 0 5px 14px rgba(35, 113, 174, .08);
+    transform: translateY(-2px);
+}
+
+.button-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #e4f1fd;
+}
+
+.button-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    image-rendering: auto;
+    display: block;
+}
+
+.button-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+
+.button-content strong {
+    font-size: 12px;
+    font-weight: 750;
+}
+
+.button-content small {
+    color: var(--muted);
+    font-size: 10px;
+    line-height: 1.4;
+}
+
+.button-arrow {
+    color: #8ba7bc;
+    font-size: 25px;
+    line-height: 1;
+}
+.content-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.8fr) minmax(280px, 0.9fr);
+    align-items: stretch;
+    gap: 24px;
+    width: 100%;
+}
+
+.content-card,
+.actions-card {
+    height: 100%;
+}
+/* RESPONSIVIDADE: TABLETS */
+
+@media (max-width: 1050px) {
+
+    body {
+        padding: 18px;
+    }
+
+    .content-grid {
+        grid-template-columns: minmax(0, 1.5fr) minmax(250px, .9fr);
+        gap: 16px;
+    }
+
+    .content-card,
+    .actions-card {
+        padding: 18px;
+    }
+
+    .anatomy-board {
+        min-height: 620px;
+        grid-template-rows: repeat(6, minmax(80px, 1fr));
+    }
+
+
+    .organ-item {
+        height: 110px;
+    }
+
+    .organ-picture {
+        flex-basis: 65px;
+        width: 65px;
+        height: 60px;
+    }
+    .body-figure {
+        grid-row: 1 / -1;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .body-figure img {
+        height: 420px;
+        max-height: 100%;
+        width: auto;
+        object-fit: contain;
+    }
+}
+
+/* RESPONSIVIDADE: CELULARES */
+
+@media (max-width: 760px) {
+
+    .content-grid {
+        grid-template-columns: minmax(0, 1fr);
+        width: 100%;
+        min-width: 0;
+    }
+
+    .content-card,
+    .actions-card {
+        width: 100%;
+        min-width: 0;
+        height: auto;
+        padding: 12px;
+    }
+
+    .anatomy-board {
+        display: grid;
+        width: 100%;
+        min-width: 0;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: 320px auto;
+        gap: 12px;
+        padding: 8px;
+        min-height: 0;
+        height: auto;
+        overflow: visible;
+    }
+
+    .content-card {
+        height: auto;
+        min-height: 0;
+        overflow: visible;
+    }
+
+    .actions-card {
+        height: auto;
+    }
+
+    .body-figure {
+        grid-column: 1 / 3;
+        grid-row: 1;
+        width: 100%;
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    .body-figure img {
+        width: 100%;
+        height: 315px;
+        max-width: 230px;
+        object-fit: contain;
+        flex-shrink: 1;
+    }
+
+    .connectors {
+        display: none;
+    }
+
+    .organ-list {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .organ-list-left {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .organ-list-right {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .organ-item,
+    .organ-list-left .organ-item,
+    .organ-list-right .organ-item {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        height: 100px;
+        flex-shrink: 0;
+        margin: 0;
+    }
+
+    .organ-picture {
+        width: 100%;
+        max-width: 75px;
+        height: 60px;
+        flex: 0 1 60px;
+    }
+
+    .organ-name {
+        max-width: 100%;
+        font-size: 10px;
+        overflow-wrap: anywhere;
+    }
+
+    /* TOOLTIP NO CELULAR */
+
+    .system-tooltip,
+    .organ-list-right .system-tooltip {
+        position: absolute;
+
+        top: auto;
+        bottom: calc(100% + 6px);
+
+        left: 50%;
+        right: auto;
+
+        width: max-content;
+        max-width: min(160px, 75vw);
+
+        padding: 8px 10px;
+
+        white-space: normal;
+        overflow-wrap: break-word;
+        text-align: center;
+
+        font-size: 11px;
+        line-height: 1.4;
+
+        transform: translateX(-50%) translateY(5px);
+    }
+
+    .organ-item:hover .system-tooltip,
+    .organ-item:focus-visible .system-tooltip,
+    .organ-item.is-active .system-tooltip {
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* CELULARES MENORES */
+
+@media (max-width: 380px) {
+
+    body {
+        padding: 8px;
+    }
+
+    .content-card,
+    .actions-card {
+        padding: 12px;
+    }
+
+    .anatomy-board {
+        grid-template-rows: 310px auto;
+        padding: 5px;
+    }
+
+    .body-figure img {
+        height: 305px;
+        max-width: 210px;
+    }
+
+    .organ-picture {
+        max-width: 75px;
+    }
+
+    .button-content strong {
+        font-size: 11px;
+    }
+
+    .button-content small {
+        font-size: 9px;
+    }
+}
+
+/* MODO ESCURO */
+
+@media (prefers-color-scheme: dark) {
+
+    :root {
+        --ink: #e8f3fb;
+        --muted: #a8c1d5;
+        --line: #29465d;
+        --page: #0b1722;
+        --card: #12283a;
+    }
+
+    .explore-header h1 {
+        color: #e8f3fb;
+    }
+
+    .anatomy-board {
+        background: radial-gradient(
+            ellipse at center,
+            #1d4059 0%,
+            #142d41 69%
+        );
+    }
+
+    .organ-item {
+        background: rgba(24, 53, 75, .95);
+        color: #e8f3fb;
+    }
+
+    .organ-item:hover,
+    .organ-item:focus-visible,
+    .organ-item.is-active {
+        background: #234761;
+        border-color: #4b9bd6;
+    }
+
+    .organ-picture {
+        background: #294960;
+    }
+
+    .action-button {
+        background: #18354b;
+        color: #e8f3fb;
+        border-color: #29465d;
+    }
+
+    .action-button:hover {
+        background: #234761;
+        border-color: #4b9bd6;
+    }
+
+    .button-icon {
+        background: #294960;
+    }
+
+    .connectors path {
+        stroke: #8aa4b8;
+    }
+
+    .connector-dots {
+        fill: #8aa4b8;
+    }
+}
+

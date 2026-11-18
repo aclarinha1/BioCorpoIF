@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BioCorpoIF</title>
+
+    <link rel="stylesheet" href="css_paginas/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <main class="explore-section">
+
+            <!-- Cabeçalho -->
+            <header class="explore-header">
+
+                <span class="eyebrow">BIOCORPOIF · ANATOMIA</span>
+
+                <h1>Explore o corpo humano</h1>
+
+                <p>
+                    Conheça os órgãos, descubra suas funções e explore
+                    os diferentes sistemas do corpo humano.
+                </p>
+
+            </header>
+
+            <!-- Área dos dois cards -->
+            <div class="content-grid">
+
+                <!-- CARD 1: EXPLORAÇÃO ANATÔMICA -->
+                <section class="content-card">
+
+                    <section
+                        class="anatomy-board"
+                        aria-label="Órgãos e suas localizações no corpo humano"
+                    >
+
+                        <!-- Imagem central do corpo humano -->
+                        <div class="body-figure">
+
+                            <img
+                                src="assets/inicio/corpo.png"
+                                alt="Ilustração frontal do corpo humano"
+                            >
+
+                        </div>
+
+                        <!-- Linhas dos órgãos -->
+                        <svg
+                            class="connectors"
+                            aria-hidden="true"
+                        ></svg>
+
+                        <!-- ÓRGÃOS DO LADO ESQUERDO -->
+                        <div class="organ-list organ-list-left">
+
+                            <!-- Cérebro -->
+                            <button
+                                class="organ-item"
+                                type="button"
+                                data-organ="Cérebro"
+                                data-system="Sistema Nervoso"
+                                data-x="48"
+                                data-y="4.5"
+                            >
+
+                                <span class="organ-picture">
+                                    <img
+                                        src="assets/orgaos_vetores/cerebro.png"
+                                        alt="Cérebro"
+                                    >
+                                </span>
+
+                                <span class="organ-name">Cérebro</span>
+
+                                <span class="system-tooltip">
+                                    Sistema Nervoso
+                                </span>
+
+                            </button>
+
+                            <!-- Pulmões -->
+                            <button
+                                class="organ-item"
+                                type="button"
+                                data-organ="Pulmões"
+                                data-system="Sistema Respiratório"
+                                data-x="43"
+                                data-y="24"
+                            >
+
+                                <span class="organ-picture">
+                                    <img
+                                        src="assets/orgaos_vetores/pulmão.png"
+                                        alt="Pulmões"
+                                    >
+                                </span>
+
+                                <span class="organ-name">Pulmões</span>
+
+                                <span class="system-tooltip">
+                                    Sistema Respiratório
+                                </span>
+
+                            </button>
+
+                            <!-- Fígado -->
+                            <button
+                                class="organ-item"
+                                type="button"
+                                data-organ="Fígado"
+                                data-system="Sistema Digestório"
+                                data-x="43"
+                                data-y="31"
+                            >
+
+                                <span class="organ-picture">
+                                    <img
+                                        src="assets/orgaos_vetores/figado.png"
+                                        alt="Fígado"
+                                    >
+                                </span>
+
+                                <span class="organ-name">Fígado</span>
+
+                                <span class="system-tooltip">
+                                    Sistema Digestório
+                                </span>
+
+                            </button>
+
+                            <!-- Intestino -->
+                            <button
+                                class="organ-item"
+                                type="button"
+                                data-organ="Intestino"
+                                data-system="Sistema Digestório"
+                                data-x="47"
+                                data-y="42.5"
+                            >
+
+                                <span class="organ-picture">
+                                    <img
+                                        src="assets/orgaos_vetores/intestino-delgado.png"
+                                        alt="Intestino"
+                                    >
+                                </span>
+
+                                <span class="organ-name">Intestino</span>
+
+                                <span class="system-tooltip">
+                                    Sistema Digestório
+                                </span>
+
+                            </button>
+
+                        </div>
+
+                        <!-- ÓRGÃOS DO LADO DIREITO -->
+                        <div class="organ-list organ-list-right">
+
+                            <!-- Coração -->
+                            <button
+                                class="organ-item"
+                                type="button"
+                                data-organ="Coração"
+                                data-system="Sistema Cardiovascular"
+                                data-x="50"
+                                data-y="24.5"
+                            >
+
+                                <span class="organ-picture">
+                                    <img
+                                        src="assets/orgaos_vetores/coração.png"
+                                        alt="Coração"
+                                    >
+                                </span>
+
+                                <span class="organ-name">Coração</span>
+
+                                <span class="system-tooltip">
+                                    Sistema Cardiovascular
+                                </span>
+
+                            </button>
+
+                            <!-- Estômago -->
+                            <button
+                                class="organ-item"
+                                type="button"
+                                data-organ="Estômago"
+                                data-system="Sistema Digestório"
+                                data-x="54"
+                                data-y="31.5"
+                            >
+
+                                <span class="organ-picture">
+                                    <img
+                                        src="assets/orgaos_vetores/estomago.png"
+                                        alt="Estômago"
+                                    >
+                                </span>
+
+                                <span class="organ-name">Estômago</span>
+
+                                <span class="system-tooltip">
+                                    Sistema Digestório
+                                </span>
+
+                            </button>
+
+                            <!-- Rins -->
+                            <button
+                                class="organ-item"
+                                type="button"
+                                data-organ="Rins"
+                                data-system="Sistema Urinário"
+                                data-x="54.5"
+                                data-y="35.5"
+                            >
+
+                                <span class="organ-picture">
+                                    <img
+                                        src="assets/orgaos_vetores/rins.png"
+                                        alt="Rins"
+                                    >
+                                </span>
+
+                                <span class="organ-name">Rins</span>
+
+                                <span class="system-tooltip">
+                                    Sistema Urinário
+                                </span>
+
+                            </button>
+
+                            <!-- Bexiga -->
+                            <button
+                                class="organ-item"
+                                type="button"
+                                data-organ="Bexiga"
+                                data-system="Sistema Urinário"
+                                data-x="49"
+                                data-y="48.5"
+                            >
+
+                                <span class="organ-picture">
+                                    <img
+                                        src="assets/orgaos_vetores/bexiga.png"
+                                        alt="Bexiga"
+                                    >
+                                </span>
+
+                                <span class="organ-name">Bexiga</span>
+
+                                <span class="system-tooltip">
+                                    Sistema Urinário
+                                </span>
+
+                            </button>
+
+                        </div>
+
+                    </section>
+
+                </section>
+
+                <!-- CARD 2: SISTEMAS DO CORPO -->
+                <aside class="actions-card">
+
+                    <div class="card-header">
+
+                        <h2>Sistemas do corpo</h2>
+
+                        <p class="card-description">
+                            Selecione um sistema para conhecer seus órgãos,
+                            características e principais funções.
+                        </p>
+
+                    </div>
+
+                    <div class="actions-list">
+
+                        <button class="action-button" type="button">
+                            <span class="button-icon">
+                                <img src="assets/sistemas_logo/Sistema Nervoso.png" alt="">
+                            </span>
+                            <span class="button-content">
+                                <strong>Sistema Nervoso</strong>
+                                <small>Coordenação e controle do organismo</small>
+                            </span>
+                            <span class="button-arrow">›</span>
+                        </button>
+
+                        <button class="action-button" type="button">
+                            <span class="button-icon">
+                                <img src="assets/sistemas_logo/Sistema Respiratorio.png" alt="">
+                            </span>
+                            <span class="button-content">
+                                <strong>Sistema Respiratório</strong>
+                                <small>Trocas gasosas e respiração</small>
+                            </span>
+                            <span class="button-arrow">›</span>
+                        </button>
+
+                        <button class="action-button" type="button">
+                            <span class="button-icon">
+                                <img src="assets/sistemas_logo/Sistema digestorio.png" alt="">
+                            </span>
+                            <span class="button-content">
+                                <strong>Sistema Digestório</strong>
+                                <small>Digestão e absorção de nutrientes</small>
+                            </span>
+                            <span class="button-arrow">›</span>
+                        </button>
+
+                        <button class="action-button" type="button">
+                            <span class="button-icon">
+                                <img src="assets/sistemas_logo/Sistema Cardiovascular.png" alt="">
+                            </span>
+                            <span class="button-content">
+                                <strong>Sistema Cardiovascular</strong>
+                                <small>Circulação do sangue</small>
+                            </span>
+                            <span class="button-arrow">›</span>
+                        </button>
+
+                        <button class="action-button" type="button">
+                            <span class="button-icon">
+                                <img src="assets/sistemas_logo/Sistema Urinario.png" alt="">
+                            </span>
+                            <span class="button-content">
+                                <strong>Sistema Urinário</strong>
+                                <small>Filtração do sangue e produção da urina</small>
+                            </span>
+                            <span class="button-arrow">›</span>
+                        </button>
+
+                        <button class="action-button" type="button">
+                            <span class="button-icon">
+                                <img src="assets/sistemas_logo/Sistema Esqueletico.png" alt="">
+                            </span>
+                            <span class="button-content">
+                                <strong>Sistema Esquelético</strong>
+                                <small>Sustentar e proteger estruturas do corpo</small>
+                            </span>
+                            <span class="button-arrow">›</span>
+                        </button>
+
+                        <button class="action-button" type="button">
+                            <span class="button-icon">
+                                <img src="assets/sistemas_logo/Sistema Reprodutor.png" alt="">
+                            </span>
+                            <span class="button-content">
+                                <strong>Sistema Reprodutor</strong>
+                                <small>Produzir gametas e participar da reprodução</small>
+                            </span>
+                            <span class="button-arrow">›</span>
+                        </button>
+            
+                        <button class="action-button" type="button">
+                            <span class="button-icon">
+                                <img src="assets/sistemas_logo/Sistema Endocrino.png" alt="">
+                            </span>
+                            <span class="button-content">
+                                <strong>Sistema Endócrino</strong>
+                                <small>Produzir e liberar hormônios</small>
+                            </span>
+                            <span class="button-arrow">›</span>
+                        </button>
+
+                        <button class="action-button" type="button">
+                            <span class="button-icon">
+                                <img src="assets/sistemas_logo/Sistema Tugumentar.png" alt="">
+                            </span>
+                            <span class="button-content">
+                                <strong>Sistema Tugumentar</strong>
+                                <small>Proteger o corpo e auxiliar na regulação da temperatura.</small>
+                            </span>
+                            <span class="button-arrow">›</span>
+                        </button>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="js/explorar/script.js"></script>
+
+</body>
+</html>
