@@ -43,7 +43,7 @@ export const orgaos = [
     sistemas: ["cardiovascular"],
     caracteristicas: [
         "O coração é um órgão muscular oco, formado principalmente pelo miocárdio, o tecido muscular responsável por suas contrações.",
-        "Possui quatro cavidades: dois átrios e dois ventrículos. Suas válvulas controlam a direção do fluxo sanguíneo, impedindo o retorno do sangue",
+        "Possui quatro cavidades: dois átrios e dois ventrículos. Suas válvulas controlam a direção do fluxo sanguíneo, impedindo o retorno do sangue.",
         "O ritmo cardíaco é coordenado por um sistema elétrico próprio. ",
         "Está situado no tórax, entre os pulmões, atrás do esterno e acima do diafragma.",
         "Sua maior parte fica ligeiramente à esquerda do centro do corpo.",
@@ -53,7 +53,7 @@ export const orgaos = [
         "O lado esquerdo recebe o sangue oxigenado e o bombeia para os demais tecidos.",
         "Suas contrações mantêm o sangue circulando pelos vasos sanguíneos.",
     ],
-    importancia: "A circulação transporta oxigênio, nutrientes e hormônios para as células e permite levar dióxido de carbono e outros resíduos para os órgãos que participam de seu processamento e eliminação. O coração também contribui para manter a pressão necessária à circulação sanguínea",
+    importancia: "A circulação transporta oxigênio, nutrientes e hormônios para as células e permite levar dióxido de carbono e outros resíduos para os órgãos que participam de seu processamento e eliminação. O coração também contribui para manter a pressão necessária à circulação sanguínea.",
     resumo: "O coração é o órgão central do sistema cardiovascular. Ele bombeia o sangue para os pulmões e para o restante do corpo, garantindo o transporte de substâncias essenciais à vida.",
     imagem: "",
 },
@@ -84,7 +84,7 @@ export const orgaos = [
     caracteristicas: [
         "A faringe é um tubo musculomembranoso que participa tanto do sistema respiratório quanto do digestório. ",
         "É dividida em três regiões: nasofaringe, orofaringe e laringofaringe.",
-        " Fica atrás das cavidades nasal e oral, estendendo-se da base do crânio até as regiões inferiores do pescoço, onde continua em direção à laringe e ao esôfago.",
+        "Fica atrás das cavidades nasal e oral, estendendo-se da base do crânio até as regiões inferiores do pescoço, onde continua em direção à laringe e ao esôfago.",
     ],
     funcoes: [
         "Conduz o ar em direção à laringe e permite a passagem dos alimentos da boca para o esôfago.",
@@ -99,14 +99,14 @@ export const orgaos = [
     nome: "Laringe",
     sistemas: ["respiratorio"],
     caracteristicas: [
-        " A laringe é uma estrutura formada por cartilagens, músculos e ligamentos. ",
+        "A laringe é uma estrutura formada por cartilagens, músculos e ligamentos. ",
         "Contém as pregas vocais e a epiglote, uma estrutura que ajuda a proteger a entrada das vias respiratórias durante a deglutição.",
         "Está situada no pescoço, entre a faringe e a traqueia.",
     ],
     funcoes: [
         "Permite a passagem do ar para a traqueia.",
         "Participa da produção da voz por meio da vibração das pregas vocais.",
-        "contribui para a proteção das vias respiratórias durante a deglutição.",
+        "Contribui para a proteção das vias respiratórias durante a deglutição.",
     ],
     importancia: "A laringe é fundamental para a comunicação oral e para a passagem segura do ar. Seus mecanismos de proteção ajudam a evitar que alimentos e líquidos entrem nas vias respiratórias.",
     resumo: "A laringe conduz o ar, participa da produção da voz e protege a entrada das vias respiratórias durante a deglutição.",
@@ -126,7 +126,7 @@ export const orgaos = [
         "O muco retém partículas, enquanto os cílios ajudam a deslocá-las em direção à garganta, contribuindo para a limpeza das vias respiratórias.",
     ],
     importancia: "A estrutura cartilaginosa ajuda a manter a passagem de ar aberta. Além disso, os mecanismos de limpeza da traqueia contribuem para proteger os pulmões contra poeira e outros materiais inalados.",
-    resumo: "A traqueia é uma via respiratória que transporta o ar até os brônquios e ajuda a remover partículas presentes no ar inspirado",
+    resumo: "A traqueia é uma via respiratória que transporta o ar até os brônquios e ajuda a remover partículas presentes no ar inspirado.",
     imagem: "",
 },
 {
@@ -208,8 +208,8 @@ export const orgaos = [
     nome: "Estômago",
     sistemas: ["digestorio"],
     caracteristicas: [
-        " O estômago é um órgão muscular oco, capaz de se expandir para receber alimentos.",
-        " Sua parede interna apresenta glândulas que produzem ácido clorídrico, enzimas digestivas e muco protetor.",
+        "O estômago é um órgão muscular oco, capaz de se expandir para receber alimentos.",
+        "Sua parede interna apresenta glândulas que produzem ácido clorídrico, enzimas digestivas e muco protetor.",
         "É dividido em regiões, incluindo cárdia, fundo, corpo e região pilórica.",
         "Fica na parte superior do abdômen, principalmente à esquerda, abaixo do diafragma e próximo ao fígado.",
     ],
@@ -273,7 +273,7 @@ export const orgaos = [
         "Quando se distende, receptores em sua parede enviam sinais ao sistema nervoso, contribuindo para a percepção da necessidade de evacuar.",
     ],
     importancia: "Permite que as fezes sejam armazenadas antes da eliminação, contribuindo para o controle da defecação em conjunto com o canal anal, os esfíncteres e os músculos do assoalho pélvico.",
-    resumo: "O reto é a porção final do intestino grosso e atua no armazenamento temporário das fezes e na coordenação da evacuação",
+    resumo: "O reto é a porção final do intestino grosso e atua no armazenamento temporário das fezes e na coordenação da evacuação.",
     imagem: "",
 },
 {
@@ -300,14 +300,14 @@ export const orgaos = [
     caracteristicas: [
         "O fígado é um dos maiores órgãos internos do corpo e também é considerado uma glândula.",
         "É formado principalmente por hepatócitos, células que executam grande parte de suas funções metabólicas.",
-        "Recebe sangue da artéria hepática e da veia porta hepática",
+        "Recebe sangue da artéria hepática e da veia porta hepática.",
         "Fica principalmente na parte superior direita do abdômen, abaixo do diafragma e protegido parcialmente pelas costelas.",
     ],
     funcoes: [
         "Produz a bile, que auxilia na digestão e absorção das gorduras.",
         "Processa nutrientes absorvidos pelo intestino.",
         "Armazena glicogênio e participa do controle da glicose sanguínea.",
-        "produz proteínas do plasma e transforma diversas substâncias, incluindo medicamentos, para facilitar seu processamento e eliminação.",
+        "Produz proteínas do plasma e transforma diversas substâncias, incluindo medicamentos, para facilitar seu processamento e eliminação.",
     ],
     importancia: "O fígado contribui para o metabolismo, o armazenamento de energia, a produção de substâncias necessárias ao sangue e o processamento de compostos que circulam pelo organismo. Também ajuda a regular a disponibilidade de nutrientes entre as refeições.",
     resumo: "O fígado desempenha funções essenciais na digestão, no metabolismo, no armazenamento de nutrientes e no processamento de substâncias presentes no sangue.",
@@ -337,16 +337,16 @@ export const orgaos = [
     nome: "Rins",
     sistemas: ["urinario"],
     caracteristicas: [
-        "O ânus é a abertura pela qual as fezes são eliminadas, com o auxílio dos esfíncteres e de mecanismos musculares e nervosos.",
+        "Os rins são dois órgãos em formato de feijão, constituídos por regiões como o córtex renal, a medula renal e a pelve renal.",
         "Suas unidades funcionais são os néfrons, estruturas microscópicas que filtram o sangue e ajustam a composição do líquido que dará origem à urina.",
-        "Ficam na parte posterior do abdômen, um de cada lado da coluna vertebral, abaixo das últimas costelas",
-        "O  rim direito costuma estar um pouco mais baixo que o esquerdo por causa da posição do fígado.",
+        "Ficam na parte posterior do abdômen, um de cada lado da coluna vertebral, abaixo das últimas costelas.",
+        "O rim direito costuma estar um pouco mais baixo que o esquerdo por causa da posição do fígado.",
     ],
     funcoes: [
         "Filtram o sangue, eliminam resíduos metabólicos pela urina e regulam a quantidade de água, sais minerais e outras substâncias no organismo.",
         "Participam do controle da pressão arterial, da produção de glóbulos vermelhos por meio da eritropoietina e da ativação da vitamina D.",
     ],
-    importancia: " Os rins mantêm o equilíbrio dos líquidos corporais e ajudam a controlar a composição química do sangue. Quando não funcionam adequadamente,resíduos e líquidos podem se acumular no organismo, prejudicando diferentes órgãos.",
+    importancia: "Os rins mantêm o equilíbrio dos líquidos corporais e ajudam a controlar a composição química do sangue. Quando não funcionam adequadamente,resíduos e líquidos podem se acumular no organismo, prejudicando diferentes órgãos.",
     resumo: "Os rins filtram o sangue, produzem a urina e regulam o equilíbrio de água, sais minerais e resíduos. Também participam de funções hormonais e da manutenção da pressão arterial.",
     imagem: "",
 },
@@ -356,7 +356,7 @@ export const orgaos = [
     sistemas: ["urinario"],
     caracteristicas: [
         "Os ureteres são dois tubos musculares estreitos que transportam a urina dos rins até a bexiga.",
-        " Suas paredes realizam contrações involuntárias que impulsionam o líquido ao longo do trajeto.",
+        "Suas paredes realizam contrações involuntárias que impulsionam o líquido ao longo do trajeto.",
         "Cada ureter começa na pelve renal de um rim, desce pelo abdômen, atravessa a região pélvica e desemboca na bexiga urinária.",
     ],
     funcoes: [
@@ -374,10 +374,10 @@ export const orgaos = [
     caracteristicas: [
         "A bexiga urinária é um órgão muscular oco e elástico.",
         "Sua parede contém o músculo detrusor, que permite a expansão durante o enchimento e a contração durante a micção.",
-        "Fica na pelve, atrás do osso púbico. Recebe a urina dos dois ureteres e se comunica com a uretra",
+        "Fica na pelve, atrás do osso púbico. Recebe a urina dos dois ureteres e se comunica com a uretra.",
     ],
     funcoes: [
-        "Armazena temporariamente a urina até o momento da eliminação",
+        "Armazena temporariamente a urina até o momento da eliminação.",
         "Quando se enche, receptores em sua parede enviam sinais ao sistema nervoso, que participa da coordenação entre a contração da bexiga e o relaxamento dos esfíncteres urinários.",
     ],
     importancia: "A bexiga permite controlar o momento da micção, evitando que a urina seja eliminada continuamente assim que chega dos rins. Seu funcionamento depende da integração entre músculos, nervos e mecanismos de controle voluntário e involuntário.",

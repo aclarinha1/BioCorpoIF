@@ -10,7 +10,7 @@ export const sistemas = [
             
             "O encéfalo inclui cérebro, cerebelo e tronco encefálico, estruturas com funções diferentes e integradas.",
             
-            "O sistema nervoso periférico inclui vias sensitivas, que levam informações ao SNC, e vias motoras, que conduzem comandos aos músculos e às glândulas. ",
+            "O sistema nervoso periférico inclui vias sensitivas, que levam informações ao SNC, e vias motoras, que conduzem comandos aos músculos e às glândulas.",
             
             "A divisão motora inclui o sistema somático, ligado principalmente ao controle voluntário dos músculos esqueléticos, e o sistema autônomo, que regula funções involuntárias."
         ],
@@ -30,7 +30,7 @@ export const sistemas = [
             
             "É essencial para a consciência, a comunicação, a tomada de decisões e a aprendizagem.",
             
-            "Coordena atividades musculares e ajuda a integrar o funcionamento de diferentes órgãos",
+            "Coordena atividades musculares e ajuda a integrar o funcionamento de diferentes órgãos.",
             
             "Trabalha em conjunto com o sistema endócrino para regular processos corporais e manter o equilíbrio interno.",
 
@@ -46,7 +46,7 @@ export const sistemas = [
         caracteristicas: [
             "É composto pelo coração, pelo sangue e pelos vasos sanguíneos: artérias, veias e capilares.",
 
-            "O coração é um órgão muscular com quatro cavidades: dois átrios e dois ventrículos",
+            "O coração é um órgão muscular com quatro cavidades: dois átrios e dois ventrículos.",
             
             "As artérias conduzem o sangue para fora do coração; as veias o levam de volta; os capilares permitem trocas entre o sangue e os tecidos.",
             
@@ -86,7 +86,7 @@ export const sistemas = [
         caracteristicas: [
             "É formado pelas vias aéreas superiores, vias aéreas inferiores e pelos pulmões.",
             
-            " As vias aéreas incluem cavidades nasais, faringe, laringe, traqueia, brônquios e bronquíolos.",
+            "As vias aéreas incluem cavidades nasais, faringe, laringe, traqueia, brônquios e bronquíolos.",
             
             "Os pulmões contém os alvéolos, pequenas bolsas cercadas por capilares sanguíneos onde ocorrem as trocas gasosas.",
             
@@ -122,7 +122,7 @@ export const sistemas = [
             
             "O tubo digestório inclui boca, faringe, esôfago, estômago, intestino delgado, intestino grosso, reto e ânus.",
             
-            "Os órgãos acessórios incluem glândulas salivares, fígado, vesícula biliar e pâncreas. ",
+            "Os órgãos acessórios incluem glândulas salivares, fígado, vesícula biliar e pâncreas.",
             
             "Realiza processos mecânicos e químicos para transformar os alimentos.",
         ],
@@ -142,7 +142,7 @@ export const sistemas = [
             
             "Contribui para o funcionamento adequado dos órgãos.",            
             
-            "Ajuda a manter o equilíbrio de água e sais minerais. ",            
+            "Ajuda a manter o equilíbrio de água e sais minerais.",            
 
         ],
         imagem: "",
@@ -151,7 +151,7 @@ export const sistemas = [
     {
         id: "urinario",
         nome: "Sistema Urinário",
-        resumo: "O sistema urinário filtra o sangue, elimina resíduos metabólicos por meio da urina e ajuda a regular a quantidade de água e sais minerais do corpo. Também participa do controle da pressão arterial, do equilíbrio ácido-base e de funções hormonais importantes para a produção de glóbulos vermelhos e a saúde dos ossos. ",
+        resumo: "O sistema urinário filtra o sangue, elimina resíduos metabólicos por meio da urina e ajuda a regular a quantidade de água e sais minerais do corpo. Também participa do controle da pressão arterial, do equilíbrio ácido-base e de funções hormonais importantes para a produção de glóbulos vermelhos e a saúde dos ossos.",
         caracteristicas: [
             "O sistema urinário é formado por dois rins, dois ureteres, a bexiga urinária e a uretra.",
 
@@ -161,7 +161,7 @@ export const sistemas = [
             
             "Os ureteres transportam a urina até a bexiga, que a armazena temporariamente; a uretra conduz a urina para fora do corpo.",
             
-            "A quantidade e a concentração da urina variam conforme a hidratação, a alimentação, a atividade física e as necessidades do organismo. ",
+            "A quantidade e a concentração da urina variam conforme a hidratação, a alimentação, a atividade física e as necessidades do organismo.",
         ],
         funcoes: [
             "Eliminar resíduos metabólicos, como ureia e creatinina, além do excesso de água e de sais minerais.",
@@ -172,12 +172,12 @@ export const sistemas = [
             
             "Manter o equilíbrio ácido-base do organismo, ajustando a eliminação de íons e a conservação de bicarbonato.",
 
-            "Produzir eritropoietina, que estimula a formação de glóbulos vermelhos, e ativar a vitamina D, importante para a saúde dos ossos. ",
+            "Produzir eritropoietina, que estimula a formação de glóbulos vermelhos, e ativar a vitamina D, importante para a saúde dos ossos.",
         ],
         importancia: [
             "O sistema urinário evita o acúmulo de resíduos que podem prejudicar o funcionamento das células e dos órgãos.",
 
-            "A regulação da água e dos sais minerais ajuda a manter o volume do sangue e o funcionamento adequado dos tecidos. ",
+            "A regulação da água e dos sais minerais ajuda a manter o volume do sangue e o funcionamento adequado dos tecidos.",
             
             "A atuação dos rins no equilíbrio ácido-base contribui para que o organismo mantenha condições adequadas para suas reações químicas.",
             
@@ -191,7 +191,7 @@ export const sistemas = [
     {
         id: "esqueletico",
         nome: "Sistema Esquelético",
-        resumo: "O sistema esquelético é formado pelos ossos, cartilagens, articulações e ligamentos que dão sustentação ao corpo. Em conjunto com os músculos, permite os movimentos, protege órgãos internos, armazena minerais e abriga a medula óssea, responsável pela produção de células sanguíneas. ",
+        resumo: "O sistema esquelético é formado pelos ossos, cartilagens, articulações e ligamentos que dão sustentação ao corpo. Em conjunto com os músculos, permite os movimentos, protege órgãos internos, armazena minerais e abriga a medula óssea, responsável pela produção de células sanguíneas.",
         caracteristicas: [
             "O esqueleto humano adulto geralmente possui 206 ossos, embora possa haver pequenas variações entre pessoas.",
 
@@ -223,7 +223,7 @@ export const sistemas = [
             
             "A medula óssea contribui para o transporte de oxigênio, a defesa imunológica e a coagulação por meio das células sanguíneas.",
             
-            "Alimentação variada com cálcio e vitamina D, atividade física adequada e prevenção de acidentes ajudam a preservar a saúde dos ossos. ",
+            "Alimentação variada com cálcio e vitamina D, atividade física adequada e prevenção de acidentes ajudam a preservar a saúde dos ossos.",
         ],
         imagem: "",
         icone: ""
@@ -259,7 +259,7 @@ export const sistemas = [
 
             "Participa das mudanças da puberdade e da maturação sexual por meio da ação hormonal.",
             
-            "O conhecimento de seu funcionamento ajuda a compreender o ciclo menstrual, a fertilidade e a gestação. ",
+            "O conhecimento de seu funcionamento ajuda a compreender o ciclo menstrual, a fertilidade e a gestação.",
             
             "Informação confiável sobre saúde reprodutiva favorece a prevenção de infecções sexualmente transmissíveis e a tomada de decisões responsáveis.",
             
