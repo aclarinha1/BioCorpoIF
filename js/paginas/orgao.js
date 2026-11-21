@@ -59,7 +59,11 @@ function renderizarPagina() {
     : orgao.sistemas.join(", ");
 
   // Ícone
-  elIcone.textContent = sistema?.icone || "◉";
+  if (sistema?.icone) {
+  elIcone.innerHTML = `<img src="${sistema.icone}" alt="" style="width:55px;height:55px;object-fit:contain;">`;
+  } else {
+  elIcone.textContent = "◉";
+  } 
 
   // Link de voltar aponta pro sistema correto
   elVoltarLink.href = `sistema.html?id=${sistemaId}`;

@@ -58,7 +58,11 @@ function renderizarPagina() {
   document.title = `${sistema.nome} — BioCorpo`;
   elNome.textContent = sistema.nome;
   elDescricao.textContent = sistema.resumo;
-  elIcone.textContent = sistema.icone || "◉";
+  if (sistema.icone) {
+  elIcone.innerHTML = `<img src="${sistema.icone}" alt="${sistema.nome}" style="width:55px;height:55px;object-fit:contain;">`;
+  } else {
+  elIcone.textContent = "◉";  
+  }
 
   // Preenche imagem (placeholder enquanto não tem)
   if (sistema.imagem) {
@@ -69,7 +73,11 @@ function renderizarPagina() {
 
   // Preenche resumo lateral
   elResumoNome.textContent   = sistema.nome;
-  elResumoIcone.textContent  = sistema.icone || "◉";
+  if (sistema.icone) {
+  elResumoIcone.innerHTML = `<img src="${sistema.icone}" alt="" style="width:28px;height:28px;object-fit:contain;">`;
+  } else {
+  elResumoIcone.textContent = "◉";
+  }
   elResumoOrgaos.textContent = orgaos.map(o => o.nome).join(", ") + ".";
   elResumoFuncao.textContent = sistema.funcoes[0];
   elResumoImport.textContent = sistema.importancia[0];
