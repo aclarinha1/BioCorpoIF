@@ -220,7 +220,7 @@ export const orgaos = [
     ],
     importancia: "O estômago ajuda a decompor os alimentos, controla a velocidade de sua passagem para o intestino e cria um ambiente ácido que dificulta a sobrevivência de muitos microrganismos ingeridos.",
     resumo: "O estômago participa da digestão mecânica e química, especialmente da digestão inicial das proteínas, preparando os alimentos para as etapas seguintes.",
-    imagem: "assets/orgaos_vetores/estomago.png",
+    imagem: "assets/orgãos/estomago.jpg",
 },
 {
     id: "intestinoDelgado",
@@ -439,7 +439,7 @@ export const orgaos = [
     ],
     importancia: "As tubas uterinas permitem o encontro entre as células reprodutivas e contribuem para o transporte do embrião inicial. Uma obstrução ou alteração em seu funcionamento pode dificultar a fecundação ou aumentar o risco de gravidez ectópica.",
     resumo: "As tubas uterinas transportam os ovócitos e geralmente são o local da fecundação, conduzindo o embrião inicial em direção ao útero.",
-    imagem: "assets/orgãos/tubas uterinas.avif",
+    imagem: "assets/orgãos/tubas uterinas.png",
 },
 {
     id: "vagina",
@@ -564,7 +564,7 @@ export const orgaos = [
     ],
     importancia: "As suprarrenais ajudam o organismo a responder a desafios físicos e emocionais e a manter o equilíbrio de água, sais minerais e pressão arterial. Seus hormônios também participam da regulação energética e de respostas de adaptação.",
     resumo: "As glândulas suprarrenais produzem hormônios importantes para o metabolismo, a pressão arterial, o equilíbrio de sais e as respostas do organismo ao estresse.",
-    imagem: "assets/orgãos/glandulas suprarrenais.webp",
+    imagem: "assets/orgãos/suprarrenais.png",
 },
 {
     id: "pancreas",
@@ -583,7 +583,7 @@ export const orgaos = [
     ],
     importancia: "O pâncreas permite o aproveitamento dos nutrientes e ajuda a manter os níveis de glicose no sangue adequados, garantindo energia para os tecidos. Alterações na produção ou na ação da insulina podem contribuir para o desenvolvimento do diabetes mellitus.",
     resumo: "O pâncreas participa dos sistemas digestório e endócrino, produzindo enzimas e outras substâncias que auxiliam na digestão, além de hormônios que regulam a glicose sanguínea e contribuem para o equilíbrio energético do organismo.",
-    imagem: "assets/orgãos/pancreas.webp",
+    imagem: "assets/orgãos/pancreas.jpg",
 },
 {
     id: "ovarios",
