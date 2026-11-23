@@ -17,4 +17,5 @@ async function carregarComponente(elemento, arquivo) {
 
 document.addEventListener('DOMContentLoaded', () => {
     carregarComponente('sobre', 'sobre.html');
+    carregarComponente('explorar', 'explorar.html');
 });
