@@ -1,59 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <link rel="stylesheet" href="css/paginas/inicio.css">
-<link rel="stylesheet" href="css/paginas/sobre.css">
-    <link rel="stylesheet" href="css/paginas/explorar.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BioCoreIF</title>
-  </head>
+    <head>
+        <script src="js/componentes/tema.js"></script>
 
-  <body>
-    <div class="menu">
-        <div class="duaslogoinicio">
-            <img src="assets/inicio/logo-inicio.png" alt="logo" class="logo-inicio">
-            <h1 class="logo">BioCoreIF</h1>
+        <link rel="stylesheet" href="css/tema.css">
+        <link rel="stylesheet" href="css/componentes/menu.css">
+        <link rel="stylesheet" href="css/paginas/inicio.css">
+        <link rel="stylesheet" href="css/paginas/sobre.css">
+        <link rel="stylesheet" href="css/paginas/explorar.css">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>BioCoreIF</title>
+    </head>
+
+    <body>
+        <div id="menu"></div>
+
+        <div class="ladoalado" id="inicio">
+            <div class="TTDB">
+                <p class="texto1">Explore o Incrível</p>
+                <div class="titulo-principal">
+                    <h1 class="titulo">corpo</h1>
+                    <h1 class="titulocell">humano</h1>
+                </div>
+                <p class="descricao">
+                    Descubra como cada órgão e sistema trabalham juntos para manter você vivo. Clique nos órgãos e explore as informações de forma interativa e didática.
+                </p>
+                <a href="#explorar" class="btn-comecar">
+                    Começar agora →
+                </a>
+            </div>
+
+            <a href="#explorar" class="btn-iniciar">INICIAR</a>
+
+            <div class="imagem-corpo">
+                <img src="assets/inicio/corpo-inicio.png"
+                    class="img-corpo-humano"
+                    alt="Imagem do Corpo Humano">
+            </div>
         </div>
 
-        <div class="links-menu">
-            <a href="#inicio" class="link-menu">Inicio</a>
-            <a href="#sistemas" class="link-menu">Sistemas</a>
-            <a href="#secao-sobre" class="link-menu">Sobre</a>
-        </div>
+        <div id="explorar"></div>
+        <div id="sobre"></div>
 
-        <div class="icones">
-            <a href="#" class="icone-link">
-                <img src="assets/inicio/claro-lupa.png" alt="Pesquisar" class="img-normal">
-                <img src="assets/inicio/claro-lupa-hover.png" alt="Pesquisar" class="img-hover">
-            </a>
-
-            <a href="#" class="icone-link">
-                <img src="assets/inicio/claro.png" alt="Tema" class="img-normal">
-                <img src="assets/inicio/claro-hover.png" alt="Tema" class="img-hover">
-            </a>
-        </div>
-    </div>
-
-    <div class="ladoalado" id="inicio">
-        <div class="TTDB">
-            <p class="texto1">Explore o Incrível</p>
-            <h1 class="titulo">corpo</h1>
-            <h1 class="titulocell">humano</h1>
-            <p class="descricao">Descubra como cada órgão e sistema trabalham juntos para manter você vivo. Clique nos órgãos e explore as informações de forma interativa e didática.</p>
-            <a href="#" class="btn-comecar">Começar agora →</a>
-        </div>
-
-        <a href="#" class="btn-iniciar">INICIAR</a>
-
-        <div class="imagem-corpo">
-            <img src="assets/inicio/corpo-inicio.png" class="img-corpo-humano" alt="Imagem do Corpo Humano">
-        </div>
-    </div>
-    <div id="explorar"></div>
-    <div id="sobre"></div>
-
-    <script src="js/componentes/layout.js"></script>
-    <script src="js/paginas/explorar.js" defer></script>
-  </body>
+        <script src="js/componentes/layout.js"></script>
+        <script src="js/paginas/explorar.js" defer></script>
+    </body>
 </html>

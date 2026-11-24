@@ -15,7 +15,8 @@ async function carregarComponente(elemento, arquivo) {
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+    await carregarComponente('menu', 'componentes/menu.html');
     carregarComponente('sobre', 'sobre.html');
     carregarComponente('explorar', 'explorar.html');
 });
