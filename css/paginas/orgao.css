@@ -1,0 +1,219 @@
+/* css/paginas/orgao.css */
+
+/* TODO: remover quando global.css estiver disponível */
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #f7fbff;
+  color: #0b2036;
+}
+
+.pagina-orgao {
+  padding: 28px clamp(20px, 3.5vw, 60px) 45px;
+}
+/* fim do TODO */
+
+.voltar-link {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: #47769c;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.voltar-link:hover {
+  color: #2878E8;
+}
+
+/* Cabeçalho do órgão */
+.orgao-header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 38px;
+}
+
+.orgao-icone {
+  height: 91px;
+  width: 91px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #65b6ff, #2776ec);
+  color: #fff;
+  font-size: 45px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.orgao-header h1 {
+  font-family: Poppins, sans-serif;
+  font-size: clamp(27px, 3vw, 39px);
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.orgao-header p {
+  font-size: 18px;
+  color: #50657b;
+  margin: 0;
+}
+
+/* Abas */
+.abas {
+  display: flex;
+  border-bottom: 1px solid #e4edf5;
+  gap: 14px;
+  margin-bottom: 25px;
+  overflow-x: auto;
+}
+
+.aba {
+  border: 0;
+  background: none;
+  color: #5e7085;
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  min-width: 150px;
+  padding: 17px 20px;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.aba.ativa {
+  color: #2878E8;
+  border-bottom-color: #2878E8;
+}
+
+/* Grid principal */
+.orgao-grid {
+  display: grid;
+  grid-template-columns: minmax(160px, .75fr) minmax(230px, 1.25fr) minmax(320px, 1fr);
+  gap: 36px;
+}
+
+/* Conteúdo da aba */
+.conteudo-aba h3 {
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.conteudo-aba ul {
+  padding-left: 25px;
+  margin: 0;
+}
+
+.conteudo-aba li {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  color: #0b2036;
+}
+
+.conteudo-aba p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #50657b;
+}
+.orgao-imagem {
+  width: 100%;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  
+  /* SEGREDO: O container da imagem fica com fundo branco puro, 
+     igualando-se ao fundo das imagens originais */
+  background-color: #ffffff; 
+  box-sizing: border-box;
+  padding: 10px; /* Um respiro leve para a imagem não colar nas extremidades */
+}
+
+.orgao-imagem {
+  width: 100%;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #ffffff; /* Fundo branco igual ao das imagens para sumir com o bloco quadrado */
+  box-sizing: border-box;
+  padding: 12px; /* Espaçamento interno para a imagem respirar */
+}
+
+.orgao-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Mantém a proporção real de todas as imagens, sem cortes e sem distorcer */
+  display: block;
+}
+
+.resumo h3 {
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  margin-bottom: 19px;
+}
+
+.resumo-item {
+  display: flex;
+  gap: 17px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.resumo-icone {
+  height: 45px;
+  width: 45px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #d5e8ff;
+  color: #2377e8;
+  font-size: 23px;
+  flex-shrink: 0;
+}
+
+.resumo-item p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+  color: #435c76;
+}
+
+.resumo-item strong {
+  color: #122b45;
+  display: block;
+  margin-bottom: 2px;
+}
+
+/* Responsivo */
+@media (max-width: 1100px) {
+  .orgao-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .resumo {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 700px) {
+  .orgao-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .orgao-imagem {
+    height: 420px;
+  }
+
+  .aba {
+    min-width: 125px;
+    padding: 15px 12px;
+  }
+}

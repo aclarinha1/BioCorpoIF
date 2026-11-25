@@ -1,13 +1,13 @@
 @import url('https://googleapis.com');
 
 html, body {
-  margin: 0;
-  padding: 0;
-  min-height: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
 }
 
 .rodape {
-    background-color: #eaf4fd;
+    background-color: var(--cor-fundo);
     min-height: 20vh;
     height: auto;
     padding: 60px;
@@ -17,7 +17,7 @@ html, body {
 .rodape .titulo {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    color: #031321;
+    color: var(--cor-texto);
     font-size: 2rem;
     margin-top: 0;
 }
@@ -25,5 +25,16 @@ html, body {
 .rodape .texto {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    color: #031321;
+    color: var(--cor-texto);
+    text-align: justify;
+}
+
+
+html[data-tema="claro"] .rodape {
+    background-color: #eaf4fd;
+}
+
+
+html[data-tema="escuro"] .rodape {
+    background-color: #132c42;
 }

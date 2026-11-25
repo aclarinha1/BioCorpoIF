@@ -15,7 +15,7 @@ export const orgaos = [
     ],
     importancia: " O cérebro permite compreender o ambiente, adquirir conhecimentos, tomar decisões e realizar tarefas complexas. Sua atuação integra diferentes informações e possibilita respostas adequadas às situações vividas.",
     resumo: " O cérebro é a principal estrutura de processamento de informações do encéfalo, participando das capacidades cognitivas, sensoriais, emocionais e motoras.",
-    imagem: "",
+    imagem: "assets/orgãos/cerebro.jfif",
 },
 {
     id: "medulaEspinhal",
@@ -33,7 +33,7 @@ export const orgaos = [
     ],
     importancia: " É essencial para a comunicação nervosa entre o encéfalo e muitas regiões corporais. Lesões medulares podem comprometer movimentos, sensibilidade e outras funções abaixo da área afetada.",
     resumo: "A medula espinhal conduz sinais nervosos entre o encéfalo e o corpo e participa da coordenação de reflexos.",
-    imagem: "",
+    imagem: "assets/orgãos/medula espinhal.jpg",
 },
 
 /*SISTEMA CARDIOVASCULAR*/
@@ -55,7 +55,7 @@ export const orgaos = [
     ],
     importancia: "A circulação transporta oxigênio, nutrientes e hormônios para as células e permite levar dióxido de carbono e outros resíduos para os órgãos que participam de seu processamento e eliminação. O coração também contribui para manter a pressão necessária à circulação sanguínea.",
     resumo: "O coração é o órgão central do sistema cardiovascular. Ele bombeia o sangue para os pulmões e para o restante do corpo, garantindo o transporte de substâncias essenciais à vida.",
-    imagem: "",
+    imagem: "assets/orgãos/coração.jpg",
 },
 
 /*SISTEMA RESPIRATÓRIO*/
@@ -75,7 +75,7 @@ export const orgaos = [
     ],
     importancia: " O nariz ajuda a proteger as vias respiratórias inferiores e participa do olfato, sentido que contribui para reconhecer cheiros, perceber perigos e identificar características dos alimentos.",
     resumo: " O nariz participa da respiração e do olfato, ajudando a preparar o ar que entra no organismo e a identificar odores do ambiente.",
-    imagem: "",
+    imagem: "assets/orgãos/nariz.jpg",
 },
 {
     id: "faringe",
@@ -92,7 +92,7 @@ export const orgaos = [
     ],
     importancia: "A faringe permite a comunicação entre diferentes partes das vias respiratórias e digestórias. Seu funcionamento coordenado ajuda a direcionar o ar e os alimentos para os caminhos adequados.",
     resumo: "A faringe é uma passagem compartilhada pelos sistemas respiratório e digestório, conduzindo o ar e participando do transporte dos alimentos durante a deglutição.",
-    imagem: "",
+    imagem: "assets/orgãos/faringe.png",
 },
 {
     id: "laringe",
@@ -110,7 +110,7 @@ export const orgaos = [
     ],
     importancia: "A laringe é fundamental para a comunicação oral e para a passagem segura do ar. Seus mecanismos de proteção ajudam a evitar que alimentos e líquidos entrem nas vias respiratórias.",
     resumo: "A laringe conduz o ar, participa da produção da voz e protege a entrada das vias respiratórias durante a deglutição.",
-    imagem: "",
+    imagem: "assets/orgãos/laringe.webp",
 },
 {
     id: "traqueia",
@@ -127,7 +127,7 @@ export const orgaos = [
     ],
     importancia: "A estrutura cartilaginosa ajuda a manter a passagem de ar aberta. Além disso, os mecanismos de limpeza da traqueia contribuem para proteger os pulmões contra poeira e outros materiais inalados.",
     resumo: "A traqueia é uma via respiratória que transporta o ar até os brônquios e ajuda a remover partículas presentes no ar inspirado.",
-    imagem: "",
+    imagem: "assets/orgãos/traqueia.webp",
 },
 {
     id: "bronquios",
@@ -146,7 +146,7 @@ export const orgaos = [
     ],
     importancia: "Os brônquios garantem que o ar alcance diferentes partes dos pulmões. Inflamações ou obstruções dessas vias podem dificultar a respiração e prejudicar a ventilação pulmonar.",
     resumo: "Os brônquios são ramificações da traqueia responsáveis por distribuir o ar dentro dos pulmões e contribuir para a limpeza das vias respiratórias.",
-    imagem: "",
+    imagem: "assets/orgãos/bronquios.jpg",
 },
 {
     id: "pulmoes",
@@ -164,7 +164,7 @@ export const orgaos = [
     ],
     importancia: "O oxigênio é utilizado pelas células em processos que produzem energia. A eliminação do dióxido de carbono também contribui para manter o equilíbrio químico do organismo. Por isso, o funcionamento pulmonar é indispensável para a manutenção da vida.",
     resumo: "Os pulmões são os principais órgãos da respiração e realizam as trocas gasosas que fornecem oxigênio ao sangue e permitem eliminar dióxido de carbono.",
-    imagem: "",
+    imagem: "assets/orgãos/pulmoes.webp",
 },
 
 /*SISTEMA DIGESTORIO*/
@@ -184,7 +184,7 @@ export const orgaos = [
     ],
     importancia: "A boca inicia o processo digestivo e facilita a passagem dos alimentos para as demais partes do sistema digestório. Também participa da fala, da percepção dos sabores e da comunicação.",
     resumo: "A boca é a entrada do sistema digestório e participa da mastigação, da insalivação, do início da digestão de determinados carboidratos e da formação do bolo alimentar.",
-    imagem: "",
+    imagem: "assets/orgãos/boca.png",
 },
 {
     id: "esofago",
@@ -201,7 +201,7 @@ export const orgaos = [
     ],
     importancia: "Permite a continuidade do processo digestivo após a deglutição. O funcionamento adequado do esôfago é necessário para que alimentos e líquidos sejam transportados com segurança até o estômago.",
     resumo: "O esôfago é o canal muscular que conduz o alimento da faringe até o estômago por meio de contrações coordenadas.",
-    imagem: "",
+    imagem: "assets/orgãos/esofago.webp",
 },
 {
     id: "estomago",
@@ -220,7 +220,7 @@ export const orgaos = [
     ],
     importancia: "O estômago ajuda a decompor os alimentos, controla a velocidade de sua passagem para o intestino e cria um ambiente ácido que dificulta a sobrevivência de muitos microrganismos ingeridos.",
     resumo: "O estômago participa da digestão mecânica e química, especialmente da digestão inicial das proteínas, preparando os alimentos para as etapas seguintes.",
-    imagem: "",
+    imagem: "assets/orgãos/estomago.jpg",
 },
 {
     id: "intestinoDelgado",
@@ -238,7 +238,7 @@ export const orgaos = [
     ],
     importancia: "É essencial para fornecer às células substâncias necessárias à produção de energia, ao crescimento, à reparação dos tecidos e à manutenção das funções corporais.",
     resumo: "O intestino delgado completa grande parte da digestão e é o principal local de absorção dos nutrientes obtidos dos alimentos.",
-    imagem: "",
+    imagem: "assets/orgãos/intestino delgado.avif",
 },
 {
     id: "intestinoGrosso",
@@ -258,7 +258,7 @@ export const orgaos = [
     ],
     importancia: "Ajuda a manter o equilíbrio de líquidos e sais minerais, participa da eliminação de resíduos e contribui para a interação entre a microbiota intestinal e o sistema imunológico.",
     resumo: "O intestino grosso absorve água e eletrólitos, abriga a microbiota e participa da formação e do transporte das fezes até sua eliminação.",
-    imagem: "",
+    imagem: "assets/orgãos/intestino grosso.webp",
 },
 {
     id: "reto",
@@ -274,7 +274,7 @@ export const orgaos = [
     ],
     importancia: "Permite que as fezes sejam armazenadas antes da eliminação, contribuindo para o controle da defecação em conjunto com o canal anal, os esfíncteres e os músculos do assoalho pélvico.",
     resumo: "O reto é a porção final do intestino grosso e atua no armazenamento temporário das fezes e na coordenação da evacuação.",
-    imagem: "",
+    imagem: "assets/orgãos/reto.jpg",
 },
 {
     id: "anus",
@@ -291,7 +291,7 @@ export const orgaos = [
     ],
     importancia: "O controle da abertura anal permite eliminar resíduos da digestão de maneira coordenada. A atuação dos esfíncteres também contribui para a continência fecal.",
     resumo: "O ânus é a abertura pela qual as fezes são eliminadas, com o auxílio dos esfíncteres e de mecanismos musculares e nervosos.",
-    imagem: "",
+    imagem: "assets/orgãos/anus.png",
 },
 {
     id: "figado",
@@ -311,7 +311,7 @@ export const orgaos = [
     ],
     importancia: "O fígado contribui para o metabolismo, o armazenamento de energia, a produção de substâncias necessárias ao sangue e o processamento de compostos que circulam pelo organismo. Também ajuda a regular a disponibilidade de nutrientes entre as refeições.",
     resumo: "O fígado desempenha funções essenciais na digestão, no metabolismo, no armazenamento de nutrientes e no processamento de substâncias presentes no sangue.",
-    imagem: "",
+    imagem: "assets/orgãos/figado.webp",
 },
 {
     id: "vesiculaBiliar",
@@ -328,10 +328,10 @@ export const orgaos = [
     ],
     importancia: "A bile ajuda a emulsificar as gorduras, dividindo-as em pequenas gotículas que facilitam a ação das enzimas digestivas. Isso favorece a digestão e a absorção de lipídios e de vitaminas lipossolúveis, como A, D, E e K.",
     resumo: "A  vesícula biliar armazena e concentra a bile produzida pelo fígado e a libera no intestino delgado para auxiliar na digestão das gorduras.",
-    imagem: "",
+    imagem: "assets/orgãos/vesicula biliar.avif",
 },
 
-/*SISTEMA URINÁRIO*/  
+/*SISTEMA URINÁRIO*/
 {
     id: "rins",
     nome: "Rins",
@@ -348,7 +348,7 @@ export const orgaos = [
     ],
     importancia: "Os rins mantêm o equilíbrio dos líquidos corporais e ajudam a controlar a composição química do sangue. Quando não funcionam adequadamente,resíduos e líquidos podem se acumular no organismo, prejudicando diferentes órgãos.",
     resumo: "Os rins filtram o sangue, produzem a urina e regulam o equilíbrio de água, sais minerais e resíduos. Também participam de funções hormonais e da manutenção da pressão arterial.",
-    imagem: "",
+    imagem: "assets/orgãos/rins.webp",
 },
 {
     id: "ureteres",
@@ -365,7 +365,7 @@ export const orgaos = [
     ],
     importancia: "Os ureteres garantem a continuidade do transporte da urina e contribuem para que ela chegue à bexiga sem retornar normalmente para os rins. Obstruções nesse trajeto podem prejudicar o fluxo urinário.",
     resumo: "Os ureteres são canais musculares que transportam a urina dos rins até a bexiga por meio de contrações involuntárias.",
-    imagem: "",
+    imagem: "assets/orgãos/ureteres.webp",
 },
 {
     id: "bexigaUrinaria",
@@ -382,7 +382,7 @@ export const orgaos = [
     ],
     importancia: "A bexiga permite controlar o momento da micção, evitando que a urina seja eliminada continuamente assim que chega dos rins. Seu funcionamento depende da integração entre músculos, nervos e mecanismos de controle voluntário e involuntário.",
     resumo: "A bexiga urinária armazena a urina e participa de sua eliminação controlada, trabalhando em conjunto com os rins, os ureteres, a uretra e o sistema nervoso.",
-    imagem: "",
+    imagem: "assets/orgãos/bexiga urinaria.webp",
 },
 {
     id: "uretra",
@@ -400,7 +400,7 @@ export const orgaos = [
     ],
     importancia: "A uretra permite a eliminação da urina, completando o trajeto iniciado nos rins. Sua anatomia também ajuda a explicar diferenças no funcionamento urinário e na frequência de determinadas infecções entre os sexos.",
     resumo: "A uretra é o canal final do sistema urinário, responsável por conduzir a urina da bexiga até o exterior do corpo.",
-    imagem: "",
+    imagem: "assets/orgãos/uretra.png",
 },
 
 /*SISTEMA REPRODUTOR*/
@@ -421,9 +421,8 @@ export const orgaos = [
     ],
     importancia: "É fundamental para o desenvolvimento da gravidez e participa das mudanças do sistema reprodutor ao longo do ciclo menstrual. Sua parede muscular e seu revestimento interno desempenham funções diferentes e complementares.",
     resumo: "O útero é o órgão muscular que participa do ciclo menstrual e oferece condições para o desenvolvimento do embrião e do feto durante a gestação.",
-    imagem: "",
+    imagem: "assets/orgãos/utero.webp",
 },
-
 {
     id: "tubasUterinas",
     nome: "Tubas Uterinas",
@@ -440,9 +439,8 @@ export const orgaos = [
     ],
     importancia: "As tubas uterinas permitem o encontro entre as células reprodutivas e contribuem para o transporte do embrião inicial. Uma obstrução ou alteração em seu funcionamento pode dificultar a fecundação ou aumentar o risco de gravidez ectópica.",
     resumo: "As tubas uterinas transportam os ovócitos e geralmente são o local da fecundação, conduzindo o embrião inicial em direção ao útero.",
-    imagem: "",
+    imagem: "assets/orgãos/tubas uterinas.png",
 },
-
 {
     id: "vagina",
     nome: "Vagina",
@@ -458,9 +456,8 @@ export const orgaos = [
     ],
     importancia: "A vagina participa da reprodução, da menstruação e do parto vaginal. Sua estrutura elástica e seus mecanismos de proteção contribuem para o funcionamento saudável do sistema reprodutor.",
     resumo: "A vagina é um canal muscular que conecta o colo do útero à abertura vaginal e participa da menstruação, da reprodução e do parto vaginal.",
-    imagem: "",
+    imagem: "assets/orgãos/vagina.webp",
 },
-
 {
     id: "epididimos",
     nome: "Epidídimos",
@@ -476,9 +473,8 @@ export const orgaos = [
     ],
     importancia: "O epidídimo é necessário para o desenvolvimento da capacidade funcional dos espermatozoides. Alterações nessa estrutura podem prejudicar sua maturação ou o transporte das células reprodutivas.",
     resumo: "Os epidídimos são estruturas responsáveis pela maturação, pelo armazenamento temporário e pelo transporte inicial dos espermatozoides.",
-    imagem: "",
+    imagem: "assets/orgãos/epididimo.webp",
 },
-
 {
     id: "prostata",
     nome: "Próstata",
@@ -494,9 +490,8 @@ export const orgaos = [
     ],
     importancia: "A próstata contribui para o funcionamento do sistema reprodutor masculino. Como envolve uma parte da uretra, alterações em seu tamanho podem interferir na passagem da urina.",
     resumo: "A próstata é uma glândula que produz parte do líquido seminal e participa do processo de ejaculação, além de estar anatomicamente relacionada ao sistema urinário.",
-    imagem: "",
+    imagem: "assets/orgãos/prostata.jfif",
 },
-
 {
     id: "penis",
     nome: "Pênis",
@@ -514,11 +509,11 @@ export const orgaos = [
     ],
     importancia: "O pênis participa tanto do sistema urinário quanto do reprodutor. Sua estrutura permite a eliminação da urina e a deposição do sêmen durante a relação sexual.",
     resumo: "O pênis é um órgão externo que participa da micção e da reprodução, permitindo a saída da urina e a passagem do sêmen pela uretra.",
-    imagem: "",
+    imagem: "assets/orgãos/penis.webp",
 },
 
 /*SISTEMA ENDÓCRINO*/
-  {
+{
     id: "hipofise",
     nome: "Hipófise",
     sistemas: ["endocrino"],
@@ -534,9 +529,8 @@ export const orgaos = [
     ],
     importancia: "A hipófise integra diferentes atividades hormonais e contribui para a coordenação do crescimento, do metabolismo, da reprodução e de outras funções do organismo. Sua atividade é regulada em conjunto com o hipotálamo.",
     resumo: "A hipófise é uma glândula endócrina que libera hormônios importantes para o crescimento, a reprodução, o equilíbrio de água e a regulação de outras glândulas.",
-    imagem: "",
+    imagem: "assets/orgãos/hipofise.png",
 },
-
 {
     id: "tireoide",
     nome: "Tireoide",
@@ -552,9 +546,8 @@ export const orgaos = [
     ],
     importancia: "A tireoide ajuda a regular a velocidade de diversas reações metabólicas. Alterações em sua atividade podem provocar mudanças no metabolismo, na disposição, na frequência cardíaca e no funcionamento de diferentes órgãos.",
     resumo: "A tireoide produz hormônios que regulam o metabolismo, o crescimento e o desenvolvimento, contribuindo para o funcionamento equilibrado do organismo.",
-    imagem: "",
+    imagem: "assets/orgãos/tireoide.webp",
 },
-
 {
     id: "suprarrenais",
     nome: "Suprarrenais",
@@ -571,9 +564,8 @@ export const orgaos = [
     ],
     importancia: "As suprarrenais ajudam o organismo a responder a desafios físicos e emocionais e a manter o equilíbrio de água, sais minerais e pressão arterial. Seus hormônios também participam da regulação energética e de respostas de adaptação.",
     resumo: "As glândulas suprarrenais produzem hormônios importantes para o metabolismo, a pressão arterial, o equilíbrio de sais e as respostas do organismo ao estresse.",
-    imagem: "",
+    imagem: "assets/orgãos/suprarrenais.png",
 },
-
 {
     id: "pancreas",
     nome: "Pâncreas",
@@ -591,9 +583,9 @@ export const orgaos = [
     ],
     importancia: "O pâncreas permite o aproveitamento dos nutrientes e ajuda a manter os níveis de glicose no sangue adequados, garantindo energia para os tecidos. Alterações na produção ou na ação da insulina podem contribuir para o desenvolvimento do diabetes mellitus.",
     resumo: "O pâncreas participa dos sistemas digestório e endócrino, produzindo enzimas e outras substâncias que auxiliam na digestão, além de hormônios que regulam a glicose sanguínea e contribuem para o equilíbrio energético do organismo.",
-    imagem: "",
+    imagem: "assets/orgãos/pancreas.jpg",
 },
-  {
+{
     id: "ovarios",
     nome: "Ovários",
     sistemas: ["endocrino", "reprodutor"],
@@ -609,9 +601,8 @@ export const orgaos = [
     ],
     importancia: "Os ovários são essenciais para o funcionamento do sistema reprodutor feminino. Seus hormônios também influenciam a saúde óssea e outras funções corporais, enquanto a liberação dos ovócitos possibilita a reprodução.",
     resumo: "Os ovários produzem células reprodutivas femininas e hormônios que regulam o ciclo menstrual, o desenvolvimento sexual e diferentes aspectos da reprodução.",
-    imagem: "",
+    imagem: "assets/orgãos/ovario.webp",
 },
-
 {
     id: "testiculos",
     nome: "Testículos",
@@ -628,11 +619,11 @@ export const orgaos = [
     ],
     importancia: "Os testículos são essenciais para a produção das células reprodutivas masculinas e para a regulação hormonal do sistema reprodutor.",
     resumo: "Os testículos produzem espermatozoides e testosterona, desempenhando funções fundamentais para a reprodução e o desenvolvimento sexual masculino.",
-    imagem: "",
+    imagem: "assets/orgãos/testiculos.webp",
 },
 
 /*SISTEMA TEGUMENTAR*/
-  {
+{
     id: "pele",
     nome: "Pele",
     sistemas: ["tegumentar"],
@@ -652,6 +643,6 @@ export const orgaos = [
     ],
     importancia: "A pele é uma das principais barreiras de proteção do organismo e contribui para a manutenção do equilíbrio interno. Sua capacidade sensorial permite perceber estímulos do ambiente, enquanto a regulação térmica ajuda a evitar variações excessivas na temperatura corporal.",
     resumo: "A pele é o órgão que reveste e protege o corpo. Participa da defesa contra agentes externos, da percepção sensorial, da regulação térmica e da manutenção do equilíbrio do organismo.",
-    imagem: "",
+    imagem: "assets/orgãos/pele.webp",
 },
 ];

@@ -1,0 +1,39 @@
+/*TEMA ESCURO*/
+
+:root {
+    color-scheme: dark;
+
+    --cor-fundo: #031321;
+    --cor-menu: #031321;
+
+    --cor-texto: #ffffff;
+    --cor-texto-secundario: #d3eeff;
+
+    --cor-superficie: #051d33;
+    --cor-borda: #18364d;
+
+    --cor-hover: #a6c1d8;
+    --cor-destaque: #41cf63;
+
+    --cor-fundo-gradiente: linear-gradient(90deg,#031321, #031321, #051d33);
+}
+
+/*TEMA CLARO*/
+
+html[data-tema="claro"] .explorar-page, html[data-tema="claro"] .rodape {
+    color-scheme: light;
+
+    --cor-fundo: #f3f7fa;
+    --cor-menu: #ffffff;
+
+    --cor-texto: #173047;
+    --cor-texto-secundario: #42566a;
+
+    --cor-superficie: #ffffff;
+    --cor-borda: #d9e3eb;
+
+    --cor-hover: #52738e;
+    --cor-destaque: #239b49;
+
+    --cor-fundo-gradiente: linear-gradient(90deg, #f3f7fa, #ffffff,#eaf1f6);
+}
