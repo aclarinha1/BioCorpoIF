@@ -119,20 +119,19 @@ CSS
 
 /* Imagem */
 .sistema-imagem {
-  height: 480px;
-  background-color: #f8fafc; /* Um fundo neutro, limpo e moderno */
-  border: 1px solid #e2e8f0; /* Borda sutil e elegante em vez de tracejada */
+  height: 400px;
+  background-color: #0a1929;
+  border: 1px solid #1e3a52;
   border-radius: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); /* Sombra suave para profundidade */
 }
 
 .sistema-imagem img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 90%;
+  max-height: 90%;
   width: auto;
   height: auto;
   object-fit: contain;

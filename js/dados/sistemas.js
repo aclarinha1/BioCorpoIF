@@ -242,7 +242,7 @@ export const sistemas = [
             "A pele e seus anexos contribuem para a cicatrização e para a proteção contínua dos tecidos internos.",
             "Higiene adequada, proteção solar, hidratação e cuidados com feridas ajudam a preservar a saúde da pele.",
         ],
-        imagem: "assets/sistemas_corpo/sistema tegumentar-corpo.jpg",
+        imagem: "assets/sistemas_corpo/tegumentar.png",
         icone: "assets/sistemas_logo/Sistema Tugumentar.png"
     }
 ];

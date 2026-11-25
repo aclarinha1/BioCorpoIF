@@ -9,33 +9,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/paginas/orgao.css">
-  <link rel="stylesheet" href="css/paginas/inicio.css">
+  <link rel="stylesheet" href="css/componentes/menu.css">
+  <link rel="stylesheet" href="css/tema.css">
 </head>
 <body>
 
-  <div class="menu">
-    <div class="duaslogoinicio">
-        <img src="assets/inicio/logo-inicio.png" alt="logo" class="logo-inicio">
-        <h1 class="logo">BioCoreIF</h1>
-    </div>
-
-    <div class="links-menu">
-        <a href="index.html" class="link-menu">Inicio</a>
-        <a href="explorar.html" class="link-menu">Sistemas</a>
-        <a href="sobre.html" class="link-menu">Sobre</a>
-    </div>
-
-    <div class="icones">
-        <a href="#" class="icone-link">
-            <img src="assets/inicio/claro-lupa.png" alt="Pesquisar" class="img-normal">
-            <img src="assets/inicio/claro-lupa-hover.png" alt="Pesquisar" class="img-hover">
-        </a>
-        <a href="#" class="icone-link">
-            <img src="assets/inicio/claro.png" alt="Tema" class="img-normal">
-            <img src="assets/inicio/claro-hover.png" alt="Tema" class="img-hover">
-        </a>
-    </div>
-  </div>
+  <div id="menu"></div>
 
   <main class="pagina-orgao">
 
@@ -93,6 +72,21 @@
   <footer id="rodape"></footer>
 
   <script type="module" src="js/paginas/orgao.js"></script>
+  <script src="js/componentes/tema.js"></script>
+  <script>
+    async function carregarMenu() {
+      const resposta = await fetch('componentes/menu.html');
+      const html = await resposta.text();
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      document.getElementById('menu').innerHTML = doc.body.querySelector('.menu').outerHTML;
 
+      // Corrige os links para funcionar fora do index
+      document.querySelector('a.link-menu[href="#"]').href = 'index.html';
+      document.querySelector('a.link-menu[href="#sistemas"]').href = 'explorar.html';
+      document.querySelector('a.link-menu[href="#secao-sobre"]').href = 'sobre.html';
+    }
+    carregarMenu();
+  </script>
 </body>
 </html>

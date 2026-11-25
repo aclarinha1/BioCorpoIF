@@ -33,7 +33,7 @@ export const orgaos = [
     ],
     importancia: " É essencial para a comunicação nervosa entre o encéfalo e muitas regiões corporais. Lesões medulares podem comprometer movimentos, sensibilidade e outras funções abaixo da área afetada.",
     resumo: "A medula espinhal conduz sinais nervosos entre o encéfalo e o corpo e participa da coordenação de reflexos.",
-    imagem: "assets/orgãos/medula espinhal.webp",
+    imagem: "assets/orgãos/medula espinhal.jpg",
 },
 
 /*SISTEMA CARDIOVASCULAR*/
@@ -92,7 +92,7 @@ export const orgaos = [
     ],
     importancia: "A faringe permite a comunicação entre diferentes partes das vias respiratórias e digestórias. Seu funcionamento coordenado ajuda a direcionar o ar e os alimentos para os caminhos adequados.",
     resumo: "A faringe é uma passagem compartilhada pelos sistemas respiratório e digestório, conduzindo o ar e participando do transporte dos alimentos durante a deglutição.",
-    imagem: "assets/orgãos/faringe.webp",
+    imagem: "assets/orgãos/faringe.png",
 },
 {
     id: "laringe",
@@ -184,7 +184,7 @@ export const orgaos = [
     ],
     importancia: "A boca inicia o processo digestivo e facilita a passagem dos alimentos para as demais partes do sistema digestório. Também participa da fala, da percepção dos sabores e da comunicação.",
     resumo: "A boca é a entrada do sistema digestório e participa da mastigação, da insalivação, do início da digestão de determinados carboidratos e da formação do bolo alimentar.",
-    imagem: "assets/orgãos/boca.jpg",
+    imagem: "assets/orgãos/boca.png",
 },
 {
     id: "esofago",
@@ -400,7 +400,7 @@ export const orgaos = [
     ],
     importancia: "A uretra permite a eliminação da urina, completando o trajeto iniciado nos rins. Sua anatomia também ajuda a explicar diferenças no funcionamento urinário e na frequência de determinadas infecções entre os sexos.",
     resumo: "A uretra é o canal final do sistema urinário, responsável por conduzir a urina da bexiga até o exterior do corpo.",
-    imagem: "assets/orgãos/ureta.png",
+    imagem: "assets/orgãos/uretra.png",
 },
 
 /*SISTEMA REPRODUTOR*/
@@ -529,7 +529,7 @@ export const orgaos = [
     ],
     importancia: "A hipófise integra diferentes atividades hormonais e contribui para a coordenação do crescimento, do metabolismo, da reprodução e de outras funções do organismo. Sua atividade é regulada em conjunto com o hipotálamo.",
     resumo: "A hipófise é uma glândula endócrina que libera hormônios importantes para o crescimento, a reprodução, o equilíbrio de água e a regulação de outras glândulas.",
-    imagem: "assets/orgãos/hipófise.png",
+    imagem: "assets/orgãos/hipofise.png",
 },
 {
     id: "tireoide",
