@@ -78,6 +78,8 @@ body {
     margin-top: 10vh;
     padding: 0 4vw;
     min-height: 600px;
+    margin-left: 140px;
+    margin-right: 80px;
 }
 
 .imagem-corpo {
@@ -124,6 +126,8 @@ body {
         gap: 20px;
         min-height: calc(100dvh - 80px);
         box-sizing: border-box;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .TTDB {
