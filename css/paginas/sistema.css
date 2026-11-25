@@ -1,0 +1,263 @@
+/* css/paginas/sistema.css */
+
+.voltar-link {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: #47769c;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.voltar-link:hover {
+  color: #2878E8;
+}
+
+/* Cabeçalho do sistema */
+.sistema-header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 38px;
+}
+
+.sistema-icone {
+  height: 91px;
+  width: 91px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #65b6ff, #2776ec);
+  color: #fff;
+  font-size: 45px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.sistema-header h1 {
+  font-family: Poppins, sans-serif;
+  font-size: clamp(27px, 3vw, 39px);
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.sistema-header p {
+  font-size: 18px;
+  color: #50657b;
+  margin: 0;
+}
+
+/* Abas */
+.abas {
+  display: flex;
+  border-bottom: 1px solid #e4edf5;
+  gap: 14px;
+  margin-bottom: 25px;
+  overflow-x: auto;
+}
+
+.aba {
+  border: 0;
+  background: none;
+  color: #5e7085;
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  min-width: 150px;
+  padding: 17px 20px;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.aba.ativa {
+  color: #2878E8;
+  border-bottom-color: #2878E8;
+}
+
+/* Grid principal */
+.sistema-grid {
+  display: grid;
+  grid-template-columns: minmax(160px, .75fr) minmax(230px, 1.25fr) minmax(320px, 1fr);
+  gap: 36px;
+}
+
+/* Conteúdo da aba */
+.conteudo-aba h3 {
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.conteudo-aba ul {
+  padding-left: 25px;
+  margin: 0;
+}
+
+.conteudo-aba li {
+  font-size: 17px;
+  margin-bottom: 21px;
+  line-height: 1.5;
+}
+
+.conteudo-aba li a {
+  text-decoration: none;
+  color: #2878E8;
+  font-weight: 500;
+}
+
+.conteudo-aba li a:hover {
+  text-decoration: underline;
+}
+
+.conteudo-aba p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #50657b;
+}
+
+CSS
+
+/* Imagem */
+.sistema-imagem {
+  height: 400px;
+  background-color: #0a1929;
+  border: 1px solid #1e3a52;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.sistema-imagem img {
+  max-width: 90%;
+  max-height: 90%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Resumo lateral */
+.resumo {
+  background: #f5faff;
+  border: 1px solid #dceaf5;
+  border-radius: 19px;
+  padding: 24px;
+  align-self: start;
+}
+
+.resumo h3 {
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  margin-bottom: 19px;
+}
+
+.resumo-item {
+  display: flex;
+  gap: 17px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.resumo-icone {
+  height: 45px;
+  width: 45px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #d5e8ff;
+  color: #2377e8;
+  font-size: 23px;
+  flex-shrink: 0;
+}
+
+.resumo-item p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+  color: #435c76;
+}
+
+.resumo-item strong {
+  color: #122b45;
+}
+
+/* Página sem global.css ainda — estilos base temporários */
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #f7fbff;
+  color: #0b2036;
+}
+
+.pagina-sistema {
+  padding: 28px clamp(20px, 3.5vw, 60px) 45px;
+}
+
+/* Links dos órgãos */
+.conteudo-aba li a {
+  color: #2878E8;
+  text-decoration: none;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.conteudo-aba li a:hover {
+  text-decoration: underline;
+}
+
+/* Texto da lista de características/funções/importância */
+.conteudo-aba li {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  color: #0b2036;
+}
+
+/* Resumo lateral */
+.resumo-item p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+  color: #435c76;
+}
+
+.resumo-item strong {
+  color: #122b45;
+  display: block;
+  margin-bottom: 2px;
+}
+
+/* Responsivo */
+@media (max-width: 700px) {
+  .sistema-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sistema-imagem {
+    height: 420px;
+  }
+
+  .aba {
+    min-width: 110px;
+    padding: 13px 10px;
+    font-size: 13px;
+  }
+
+  /* Ícone em cima, texto embaixo */
+  .sistema-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .sistema-header h1 {
+    font-size: clamp(24px, 6vw, 32px);
+  }
+
+  .sistema-header p {
+    font-size: 15px;
+  }
+}
