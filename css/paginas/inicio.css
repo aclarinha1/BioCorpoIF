@@ -7,111 +7,52 @@ html, body {
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
 body {
-    background: linear-gradient(90deg, #031321,#031321, #051d33);
+    background: var(--cor-fundo-gradiente);
     min-height: 100vh;
 }
 
-.menu {
-    background-color: #031321;
-    height: 80px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    align-items: center;
-    flex-wrap: wrap;
-    color: #ffffff;
-    padding-left: 4vw;
-    padding-right: 4vw;
-}
-
-.links-menu{
-    justify-content: center;
-    align-items: center;
+.TTDB {
     display: flex;
-    gap: 3vw;
-    text-align: center;
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    min-width: 0;
 }
 
-.link-menu:hover {
-  color: #a6c1d8;
-}
-
-.link-menu{
-    color: #ffffff;
-    text-decoration: none;
-    justify-self: center;
-    
-}
-
-.logo{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 1.5vw;
-    justify-self: start;
-}
-
-.texto1{
+.texto1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    color: #d3eeff;
-    font-size: 2.8vw;
+    color: var(--cor-texto-secundario);
+    font-size: clamp(22px, 2.8vw, 42px);
+    margin: 0 0 10px 0;
+    margin-top: -150px;
 }
 
-.titulo{
+.titulo-principal {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+}
+
+.titulo {
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
-    color: #ffffff;
-    font-size: 5.5vw;
-    margin-top: -7vh;
+    color: var(--cor-texto);
+    font-size: clamp(48px, 5.5vw, 85px);
+    margin: 0;
 }
 
-.descricao{
-    display: flex;
+.descricao {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    color: #ffffff;
-    margin-top: -7vh;
-    font-size: 2vw;
-}
-
-.icones{
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-}
-
-.icone-link {
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-}
-
-.icone-link img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    transition: opacity 0.2s ease;
-}
-
-.icone-link .img-hover {
-    opacity: 0;
-}
-
-.icone-link:hover .img-normal {
-    opacity: 0;
-}
-
-.icone-link:hover .img-hover {
-    opacity: 1;
+    color: var(--cor-texto);
+    font-size: clamp(16px, 2vw, 28px);
+    margin: 25px 0;
+    max-width: 650px;
 }
 
 .btn-comecar{
@@ -129,11 +70,14 @@ body {
     align-items: center;
 }
 
-.ladoalado{
+.ladoalado {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4vw;
     margin-top: 10vh;
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding: 0 4vw;
+    min-height: 600px;
 }
 
 .imagem-corpo {
@@ -148,82 +92,65 @@ body {
     height: auto;
 }
 
-.duaslogoinicio{
-    display: flex;
-}
-
-.logo-inicio{
-    margin-top: 7px;
-    margin-right: 5px;
-    width: 3vw;
-    height: 3vw;
-}
-
 .btn-iniciar{
     display: none;
 }
 
-.titulocell{
+.titulocell {
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
-    color: #41cf63;
-    font-size: 5.5vw;
-    margin-top: -17.5vh;
-    margin-left: 16.5vw;
+    color: var(--cor-destaque);
+    font-size: clamp(48px, 5.5vw, 85px);
+    margin: 0;
+}
+
+#inicio {
+    min-height: calc(100dvh - 80px);
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
-    .icones{
+    .icones {
         display: none;
     }
 
-    .links-menu {
-        justify-content: end;
-        display: flex;
-        grid-column: 2 / 4;
-        justify-self: end;
-    }
-
-    .link-menu {
-        font-size: 3vw;
-    }
-    .logo{
-        font-size: 4vw;
-    }
-
-    .logo-inicio{
-        margin-bottom: px;
-        width: 7vw;
-        height: 7vw;
-    }
-
-    .menu {
-        padding-left: 8vw;
-        padding-right: 8vw;
-    }
-
     .ladoalado {
-        padding-left: 8vw;
-        padding-right: 8vw;
-        display: flex;
+        padding: 0 8vw;
         flex-direction: column;
+        align-items: flex-start;
+        min-height: auto;
+        gap: 20px;
+        min-height: calc(100dvh - 80px);
+        box-sizing: border-box;
     }
 
-    .texto1{
-        display: flex;
-        margin-top: -15vw;
+    .TTDB {
+        width: 100%;
+    }
+
+    .texto1 {
         font-size: 8vw;
+        margin-bottom: 10px;
+        margin-top: -8vh;
     }
 
-    .titulo{
-        margin-top: -5vw;
-        font-size: 9vw;
+    .titulo-principal {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
     }
 
-    .descricao{
+    .titulo {
+        font-size: 20vw;
+        color: var(--cor-texto);
+    }
+
+    .descricao {
         font-size: 5vw;
-        margin-top: -15vw;
-        color: #d3eeff;
+        margin: 20px 0;
+        margin-top: -1vh;
     }
 
     .img-corpo-humano {
@@ -235,7 +162,7 @@ body {
         margin-top: -50vw;
     }
 
-    .btn-comecar{
+    .btn-comecar {
         display: none;
     }
 
@@ -254,20 +181,24 @@ body {
         font-family: 'Poppins', sans-serif;
         font-weight: 800;
         font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .btn-iniciar {
+        display: flex;
     }
 
     .img-corpo-humano{
         display: none;
     }
 
-    .titulocell{
-        display: flex;
-        color: #41cf63;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 800;
+    .titulocell {
         font-size: 20vw;
-        margin-top: -9vh;
-        margin-left: -0.1vh;
+        margin-top: -2vh;
+    }
+
+    .imagem-corpo {
+        display: none;
     }
 
     .titulo{
@@ -276,6 +207,32 @@ body {
         font-family: 'Poppins', sans-serif;
         font-weight: 800;
         font-size: 20vw;
-        margin-top: -7vh;
+        margin-top: -4vh;
+    }
+
+    #inicio {
+        min-height: auto;
+        height: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 25px;
+        margin-top: 60px;
+    }
+
+    .TTDB {
+        margin-top: 0;
+        height: auto;
+    }
+
+    
+
+    .btn-iniciar {
+        position: static;
+        margin-top: 0;
+        margin-bottom: 0;
+        align-self: flex-start;
     }
 }
